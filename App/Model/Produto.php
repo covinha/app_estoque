@@ -11,7 +11,7 @@ namespace App\Model;
 class Produto
 {
     private $id;
-    private $descreicao;
+    private $descricao;
     private $quantidade;
     private $valor;
     private $validade;
@@ -35,18 +35,20 @@ class Produto
     /**
      * @return mixed
      */
-    public function getDescreicao()
+    public function getDescricao()
     {
-        return $this->descreicao;
+        return $this->descricao;
     }
 
     /**
-     * @param mixed $descreicao
+     * @param mixed $descricao
      */
-    public function setDescreicao($descreicao)
+    public function setDescricao($descricao)
     {
-        $this->descreicao = $descreicao;
+        $this->descricao = $descricao;
     }
+
+
 
     /**
      * @return mixed

@@ -22,8 +22,6 @@ public function inserir($produto)
         $i->bindValue("validade", $produto->getValidade());
         $i->execute();
         return true;
-
-
     } catch (\PDOException $e) {
         echo "<div class= 'alert-danger'>{$e->getMessage()}</div>";
     }

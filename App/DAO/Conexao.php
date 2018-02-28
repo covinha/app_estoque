@@ -12,7 +12,7 @@ namespace App\DAO;
 class Conexao
 {
  protected $conexao;
- private $datebase = "db_estoque";
+ private $database = "db_estoque";
  private $host = "localhost";
  private $user = "root";
  private  $senha = "#9258863709202202#";
@@ -22,7 +22,7 @@ class Conexao
      */
     public function __construct()
     {
-        $this->conexao = new \PDO("mysql:dbname={$this->datebase};host={$this->host}", "$this->user", "$this->senha");
+        $this->conexao = new \PDO("mysql:dbname={$this->database}; host={$this->host}", "$this->user", "$this->senha");
         $this->conexao->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
     }
 
